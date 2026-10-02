@@ -1,16 +1,59 @@
-# React + Vite
+# Conmix ERP - Enterprise Resource Planning System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive, full-stack ERP tailored specifically for construction, concrete, and block manufacturing operations. Built with the MERN stack (MongoDB, Express, React, Node.js), this system provides real-time tracking of production, logistics, sales, finance, and human resources.
 
-Currently, two official plugins are available:
+## 🌟 Key Modules & Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 📊 Executive Dashboard
+* Live financial tracking (Revenue, Receivables).
+* Real-time production yields and dispatch queues.
 
-## React Compiler
+### 🚚 Sales & Logistics
+* **Delivery Challans:** Instantly generate, track, and print A4/A5 delivery dispatch tickets.
+* **Invoicing & Aging:** Commercial invoice generation and intelligent Debtors Aging tracking.
+* **Dispatch Board:** Live queue management for outbound trucks.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏭 Yard & Production
+* **Live Inventory & BOM:** Recipe builder (Bill of Materials) and automated stock deductions.
+* **Production Logs:** Daily yield tracking for block machines and batching mixers.
+* **QC & Curing:** Quality control and curing batch timers.
 
-## Expanding the ESLint configuration
+### 💰 Finance & Accounts
+* **Party Ledger (Khata):** Automated debit/credit running balances for customers and suppliers with printable PDF statements.
+* **Payment Verification Portal:** High-security portal for uploading, viewing, and verifying payment proofs (Bank Receipts, Cheques) with local download capabilities.
+* **Expenses & P&L:** General ledger expense tracking and real-time Profit & Loss calculation.
+* **Daily Cash Book & PDC:** Manage petty cash and post-dated cheques.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👷 HR & Maintenance
+* **Payroll & Advances:** Automated piece-rate and fixed-salary processing with printable payslips.
+* **Fleet Maintenance:** Track truck/machinery odometer readings, service logs, and maintenance expenses.
+* **Employee Management:** Centralized staff master data and daily attendance registers.
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend:**
+* React.js (Hooks, Context, Functional Components)
+* Tailwind CSS (Styling, Print Modifiers)
+* Lucide React (Iconography)
+
+**Backend:**
+* Node.js & Express.js (RESTful API Server)
+* MongoDB & Mongoose (NoSQL Database & Object Modeling)
+* Multer (Secure File Uploads & Multipart Form Data)
+* CORS & Dotenv (Security & Environment Variables)
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+* Node.js installed on your machine.
+* MongoDB installed locally or a MongoDB Atlas URI.
+
+### 1. Backend Setup (Node.js / Express)
+Navigate to your backend directory and install dependencies:
+```bash
+cd conmix-backend
+npm install express mongoose cors dotenv multer
